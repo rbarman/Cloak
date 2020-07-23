@@ -3,6 +3,8 @@ import pandas as pd
 import yaml
 import os
 from datetime import datetime
+import random 
+import string
 
 def read_config(yaml_path):
 	'''
@@ -87,7 +89,11 @@ def create_policy(config):
 		if transform_type == 'HASH':
 			transform_dict['type'] = 'tokenizer'
 			transform_dict['max_token_len'] = config['Columns'][column]['transform']['length']
-			transform_dict['key'] = 'my_secret'
+
+			# create a random key
+			chars = string.ascii_letters + string.digits
+			key = ''.join(random.choice(chars) for i in range(50))
+			transform_dict['key'] = key
 		else:
 			# ignore other transformations
 			break
