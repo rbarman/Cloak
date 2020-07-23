@@ -1,0 +1,17 @@
+label: auto_generated
+rules:
+- actions:
+  - transform:
+      key: Z0fnRPH6fq6EhMSwxJmH5sYQ8sSK9pDItvwIa0idDFSKKaBO1f
+      max_token_len: 10
+      type: tokenizer
+  match:
+    name: ID
+- actions:
+  - transform:
+      key: QdAjbDMcD0xua3GFdg1v7vTMKs1sGeEbh6nWnQfqphwr8C3TBH
+      max_token_len: 40
+      type: tokenizer
+  match:
+    name: LastName
+version: 1
