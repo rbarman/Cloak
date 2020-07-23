@@ -1,0 +1,17 @@
+---
+File:
+  Delimiter: ','
+  Header: True
+
+Columns:
+  1:
+    transform: 
+      type: HASH
+      length: 10
+  3:
+      transform: 
+        type: HASH
+        length: 40
+  4:
+    transform: 
+      type: DATE
