@@ -12,6 +12,13 @@ Implemented Cape transformations (https://docs.capeprivacy.com/libraries/cape-py
 * Cloak dynamically creates a cape policy and applies
 * End user gets cloak policy and deidentified file
 
+ex)
+- Soure file = https://github.com/rbarman/Cloak/blob/master/test_files/source_header.csv
+- Cloak Config = https://github.com/rbarman/Cloak/blob/master/test_files/config_header.yaml
+- Deidentified file = https://github.com/rbarman/Cloak/blob/master/test_files/source_header_nophi.csv
+- Generated Cloak Policy = https://github.com/rbarman/Cloak/blob/master/test_files/auto_07222020_220015.yaml
+
+
 ## Config files
 
 Config file is a yaml file that describes how to read source file and how to make transformations
